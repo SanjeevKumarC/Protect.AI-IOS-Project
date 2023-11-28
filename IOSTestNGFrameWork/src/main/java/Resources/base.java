@@ -34,14 +34,15 @@ public class base {
 
 	// global Variables
 	public static IOSDriver driver;
-	public static String credientialsFilePath = "/Users/user/eclipse-workspace/IOSTestNGFrameWork/src/main/java/Resources/credientials.properties";
-	public static String ageasProxyTestDataFilePath = "/Users/user/eclipse-workspace/IOSTestNGFrameWork/src/main/java/Resources/ageasProxyTestData.properties";
-	public static String ageasVpnTestDataFilePath = "/Users/user/eclipse-workspace/IOSTestNGFrameWork/src/main/java/Resources/ageasVpnTestData.properties";
-	public static String ageasScreenMirroringTestDataFilePath = "/Users/user/eclipse-workspace/IOSTestNGFrameWork/src/main/java/Resources/ageasScreenMirroringTestData.properties";
-	public static String ageasUnsecuredwifiTestDataFilePath = "/Users/user/eclipse-workspace/IOSTestNGFrameWork/src/main/java/Resources/ageasUnsecuredwifiTestData.properties";
-	public static String ageasAppInstallationTestDataFilePath = "/Users/user/eclipse-workspace/IOSTestNGFrameWork/src/main/java/Resources/ageasAppInstallationTestData.properties";
-	public static String ageasEnabledScreenLockTestDataFilePath = "/Users/user/eclipse-workspace/IOSTestNGFrameWork/src/main/java/Resources/ageasEnabledScreenLockTestData.properties";
-	public static String screenShootFilePath = "/Users/user/eclipse-workspace/IOSTestNGFrameWork/Screenshoot/";
+	static String path=System.getProperty("user.dir");
+	public static String credientialsFilePath = path+"/src/main/java/Resources/credientials.properties";
+	public static String ageasProxyTestDataFilePath = path+"/src/main/java/Resources/ageasProxyTestData.properties";
+	public static String ageasVpnTestDataFilePath = path+"/src/main/java/Resources/ageasVpnTestData.properties";
+	public static String ageasScreenMirroringTestDataFilePath = path+"/src/main/java/Resources/ageasScreenMirroringTestData.properties";
+	public static String ageasUnsecuredwifiTestDataFilePath = path+"/src/main/java/Resources/ageasUnsecuredwifiTestData.properties";
+	public static String ageasAppInstallationTestDataFilePath = path+"/src/main/java/Resources/ageasAppInstallationTestData.properties";
+	public static String ageasEnabledScreenLockTestDataFilePath = path+"/src/main/java/Resources/ageasEnabledScreenLockTestData.properties";
+	public static String screenShootFilePath = path+"/Screenshoot/";
 
 //**************************************************************************************************************************************
 	// User Defined Method To open Ageas Application
